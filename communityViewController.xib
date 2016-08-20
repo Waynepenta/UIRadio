@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="communityViewController">
+            <connections>
+                <outlet property="communityTableV" destination="PVf-Zh-UCD" id="Stt-JP-fY6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PVf-Zh-UCD">
+                    <rect key="frame" x="0.0" y="42" width="600" height="558"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Gbc-cW-apy">
+                    <rect key="frame" x="120" y="10" width="150" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="N0k-Iq-Gnk"/>
+                        <constraint firstAttribute="height" constant="30" id="aa5-np-b6S"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="dmD-SW-C0m"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Hot"/>
+                        <segment title="New"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gbc-cW-apy" secondAttribute="trailing" constant="210" id="Dzk-Zb-i76"/>
+                <constraint firstItem="PVf-Zh-UCD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PYV-3l-yJV"/>
+                <constraint firstAttribute="trailing" secondItem="PVf-Zh-UCD" secondAttribute="trailing" id="U00-r6-5au"/>
+                <constraint firstItem="Gbc-cW-apy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="120" id="UzH-Dj-iV9"/>
+                <constraint firstItem="PVf-Zh-UCD" firstAttribute="top" secondItem="Gbc-cW-apy" secondAttribute="bottom" constant="2" id="WF2-jB-q9I"/>
+                <constraint firstItem="Gbc-cW-apy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="dV0-r8-22W"/>
+                <constraint firstAttribute="bottom" secondItem="PVf-Zh-UCD" secondAttribute="bottom" id="x8l-bd-QI3"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Dzk-Zb-i76"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="352" y="287"/>
+        </view>
+    </objects>
+</document>
